@@ -12,7 +12,7 @@ const LogoutButton = () => {
           returnTo: window.location.origin,
         })
       }
-      varient="danger"
+      variant="danger"
       className="btn-margin"
     >
       Log Out
