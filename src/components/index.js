@@ -1,3 +1,7 @@
+// ***************************************************************************
+// Barrel File - aka import all the things
+// ***************************************************************************
+
 import Content from "./content";
 import Footer from "./footer";
 import Hero from "./hero";
