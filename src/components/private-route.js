@@ -4,16 +4,15 @@ import { withAuthenticationRequired } from '@auth0/auth0-react';
 import { Loading } from './index';
 
 const PrivateRoute = ({ component, ...args }) => {
-
   return (
-    <Route>
+    <Route
       component={withAuthenticationRequired(component, {
         onRedirecting: () => <Loading />,
       })}
       {...args}
-    </Route>
+    />
   );
-}
+};
 
 // const PrivateRoute = () => ();
 // const PrivateRoute = ({ component, ...args }) => (
